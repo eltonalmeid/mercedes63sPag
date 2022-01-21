@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&family=Titillium+Web:wght@300&display=swap');
+
+
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    background: #1C1C1C;
+    color: white;
+}
+
+/* loading animation */
+
+.anim-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.shutter{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: #000;
+}
+
+.shutter.top{
+    top: 0;
+    z-index: 2;
+    animation: slide-top 2s 2.5s forwards 1;
+}
+
+.shutter.bottom{
+    bottom: 0;
+    animation: slide-bottom 2s 2.5s forwards 1;
+}
+
+.shutter.top .logo{
+    position: absolute;
+    height: 250px;
+    bottom: -125px;
+    /* botton should be eqaul to its half of the height */
+    left: 50%;
+    transform: translateX(-50%) rotateY(90deg);
+    z-index: 2;
+    animation: logo_anim .5s 1s forwards 1;
+}
+
+@keyframes logo_anim{
+    0%{
+        transform: translateX(-50%) rotateY(90deg);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
+.shutter.top::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    bottom: 0;
+    left: -100%;
+    animation: slide-in-out 1s 1.5s forwards 1;
+}
+
+@keyframes slide-in-out{
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+@keyframes slide-top{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: -100%;
+    }
+}
+
+@keyframes slide-bottom {
+    0%{
+        bottom: 0;
+    }
+    100%{
+        bottom: -100%;
+    }
+}
+
+/* loading animation end */
+
+#container
+{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 50%;
+    border-width: 2px;
+    border-color: #363636;
+    border-radius: 5px;
+    border-style: solid;
+    background: black;
+}
+
+#logoMercedes
+{
+    width: 55%;
+    position: absolute;
+    left: 45%;
+    top:11em;
+}
+
+ 
+h1
+{
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+}
+
+#boxSummary
+{
+    background: #363636;
+    /* padding-top: 5px;
+    padding-bottom: 10px; */
+    color: white;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+#boxSummary ul li
+{
+    padding-bottom: 15px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+#boxSummary a{
+    text-decoration: none;
+    width:260px;
+    display:block;
+}
+
+#titleIndex
+{
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+    color: whitesmoke;
+    text-shadow: #696969 2px 2px 4px;
+}
+
+.subTitles
+{
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 200;
+}
+
+p
+{
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: sans-serif;
+}
+
+#superCarFront
+{
+    width: 100%;
+}
+
+#superCarBack
+{
+    width: 100%;
+}
+
+#superCarInterior
+{
+    width: 100%;
+}
+
+#superCarSeats
+{
+    width: 100%;
+}
+
+#superCarTop
+{
+    width: 100%;
+}
+
+
+
+.box
+{
+    text-align: center;
+}
+
+footer
+{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100%;
+    font-family: sans-serif;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3
+{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p
+{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    padding-right: 40px;
+}
+
+.socials li
+{
+    margin: 0 10px;
+
+}
+
+.socials a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i
+{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i
+{
+    color: aqua;
+}
+
+.footer-bottom
+{
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p
+{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span
+{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+.amgh3
+{
+    text-shadow: #696969 2px 2px 4px;
+}
+
+#oi
+{
+    font-family: 'Libre Barcode 39 Text', cursive;
+}
+
+@media screen and (max-width:1444px) {
+    .videoCar
+    {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1044px)
+{
+    #container
+    {
+        width: 80%;
+    }    
+}
+
+@media screen and (max-width:700px) {
+    #container
+    {
+        position: static;
+        width: 90%;
+    }
+
+    #logoMercedes
+    {
+        position: static;
+        width: 100%;
+        text-align: center;
+    }
+
+    .videoCar
+    {
+        height: auto;
+        width: auto;
+    }
+}
+
+@media screen and (max-width:380px) {
+    #container
+    {
+        width: 90%;
+    }
+
+    .videoCar
+    {
+        height: auto;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:290px) {
+    #container
+    {
+        width: 95%;
+    }
+}
+
+/* Button (Scroll To Top) */
+.to-top {
+    background: white;
+    position: fixed;
+    bottom: 16px;
+    right:32px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:32px;
+    color:#1f1f1f;
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+  }
+  
+  .to-top.active {
+    bottom:32px;
+    pointer-events: auto;
+    opacity:1;
+  }
+
+/* ScrollBar Style*/
+html::-webkit-scrollbar {
+    width: 10px;
+  }
+
+html::-webkit-scrollbar-track {
+    background: rgb(179, 177, 177);
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: rgb(136, 136, 136);
+    border-radius: 10px;
+  }
+
+html::-webkit-scrollbar-thumb:hover {
+    background: rgb(100, 100, 100);
+    border-radius: 10px;
+  }
+
+html::-webkit-scrollbar-thumb:active {
+    background: rgb(68, 68, 68);
+    border-radius: 10px;
+  }
+
+.hidden{
+    display: none;
+}
