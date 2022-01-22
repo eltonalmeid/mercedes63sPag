@@ -5,7 +5,7 @@
 </p>
 
 <h2 align="center">
-  Acesse a página da AMG GT 63 S<a target="_blank" href="#">AQUI</a>! :stuck_out_tongue_closed_eyes:
+  Acesse a página da AMG GT 63 S<a target="_blank" href="#">AQUI</a>!
 </h2>
 
 <p align="center">
