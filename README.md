@@ -1,7 +1,7 @@
 <h1>Mercedes-AMG GT 63 S Page</h1>
 
 <p align="center">
-  <img alt="mockup" src=".assets/iMac-amg.jpg" width="100%">
+  <img alt="mockup" src="./assets/iMac-amg.jpg" width="100%">
 </p>
 
 <h2 align="center">
