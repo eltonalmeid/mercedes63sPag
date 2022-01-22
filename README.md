@@ -14,7 +14,7 @@
 </p>
 
 ## :clipboard: Sobre o Projeto
-Essa página foi desenvolvida com os conhecimentos que possuo no momento.
+Essa página review do carro Mercedes Benz AMG GT 63 S, foi desenvolvida com os conhecimentos que possuo em HTML, CSS e JS.
 
 ## :computer: Tecnologias utilizadas
 
